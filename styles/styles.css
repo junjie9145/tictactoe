@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #8ac7db;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  font-size: 18px;
+  color: white;
+  border: white 1px solid;
+}
+
+button:hover {
+  background-color: #60bcdb;
+}
+
+.title {
+  background-color: #60bcdb;
+  color: #fff;
+  padding: 5px;
+}
+
+.title h1 {
+  margin: 3px;
+  padding: 3px;
+}
+
+.game {
+  background-color: #60bcdb;
+  color: #fff;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.game button {
+  width: 10%;
+  margin: 5px;
+  border-radius: 10%;
+}
+
+.game .game-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game .game-container .gridbox {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  border: black 3px solid;
+}
+/*# sourceMappingURL=styles.css.map */
