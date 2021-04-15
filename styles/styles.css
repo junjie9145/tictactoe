@@ -34,7 +34,7 @@ button:hover {
   padding: 3px;
 }
 
-.game {
+.startgame {
   background-color: #60bcdb;
   color: #fff;
   margin-top: 2rem;
@@ -46,10 +46,41 @@ button:hover {
           box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.game button {
-  width: 10%;
+.startgame input {
+  padding: 3px;
   margin: 5px;
-  border-radius: 10%;
+  border: none;
+  background-color: #60bcdb;
+  color: #fff;
+  border-bottom: black 1px solid;
+}
+
+.game {
+  display: none;
+  background-color: #60bcdb;
+  color: #fff;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.game .players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game .players p {
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .game .game-container {
@@ -68,5 +99,39 @@ button:hover {
   height: 100px;
   background-color: whitesmoke;
   border: black 3px solid;
+}
+
+.checked {
+  color: black;
+  font-size: 5rem;
+}
+
+.winner {
+  position: fixed;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.winner button {
+  margin: 5px;
+}
+
+.winner button:hover {
+  background-color: white;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
